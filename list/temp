@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../style.css">
+        <title>の、ブラックブロックチョコ</title>
+    </head>
+    <body>
+        <div class="contents">
+            <span class="subtitle">ここにタイトルを入力</span>
+                <div class="text">
+                    <p>
+                        ここに本文を入力
+                    </p><br>
+                </div>
+        </div>
+        <div class="info">
+            <a href="https://catnamazu.github.io/bloglist.html"><span class="infotxt">リストに戻る</span></a>
+            <a href="https://catnamazu.github.io/index.html"><span class="infotxt">トップページ</span></a>
+        </div>
+    </body>
+</html>

@@ -1,20 +1,155 @@
 body {
-    font-family: "Helvetica Neue",
-      Arial,
-      "Hiragino Kaku Gothic ProN",
-      "Hiragino Sans",
-      Meiryo,
-      sans-serif;
-
-    background-image: url("images/background1.jpg");
-    background-size: cover;
-    background-repeat:no-repeat; 
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "ヒラギノ角ゴ ProN W3", HiraKakuProN-W3, 游ゴシック, "Yu Gothic", メイリオ, Meiryo, Verdana, Helvetica, Arial, sans-serif;
+    font-size: 20px;
 }
 
 .title{
-    text-align: center;
     color: white;
-    transform: scale(0.8, 1);
+    font-size: 30px;
+}
+
+.transform_pc{
+    display: block !important;
+    position: relative;
+        left: 10px;
+    font-family: serif;
+    font-size: 150px;
+    font-weight: bold;
+    letter-spacing: -0.3em;
+    line-height: 1;
+    transform: scale(0.6, 1);
+    transform-origin: left top;
+    width: 167%;
+    margin-bottom: 500px;
+}
+
+.transform_sm{
+    display: none !important;
+    position: relative;
+    font-family: serif;
+    font-size: 85px;
+    font-weight: bold;
+    letter-spacing: -0.3em;
+    line-height: 1;
+    transform: scale(0.6, 1);
+    transform-origin: left top;
+    width: 167%;
+    margin-bottom: 200px;
+}
+
+.contents{
+    text-align: center;
+    border: none;
+    background-color: white;
+	width: 100%;
+	height: max-content;
+    /* margin-bottom: 50px; */
+}
+
+.text{
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.subtitle{
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.subtitle::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;/*線の上下位置*/
+    display: inline-block;
+    width: 60px;/*線の長さ*/
+    height: 1px;/*線の太さ*/
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);/*位置調整*/
+    background-color: black;/*線の色*/
+}
+
+.link{
+    border: 1px solid black;
+    display: inline-block;
+    background: white;
+    text-align: left;
+    padding: 8px;
+    margin: 10px;
+    width: 80%;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+.jump{
+    border: 1px solid black;
+    display: inline-block;
+    background: black;
+    text-align: center;
+    padding: 8px;
+    margin: 10px;
+    width: 20%;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+.date{
+    font-weight: bold;
+    color: gray;
+    font-size: 15px;
+}
+
+.info{
+    background-color: rgba(60, 60, 60, 1);
+    border: none;
+	width: 100%;
+	height: 100px;
+}
+
+.infotxt{
+    position: relative;
+    top: 25px;
+    margin: 20px;
+    color: white;
+}
+
+.flex{
+    animation-name:fadeUpAnime;
+    animation-duration:0.5s;
+    animation-fill-mode:forwards;
+    opacity:0;
+    }
+    @keyframes fadeUpAnime{
+    from {
+        opacity: 0;
+    transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+    transform: translateY(0);
+    }
+  }
+
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.pc { display: block !important; }
+.sp { display: none !important; }
+ 
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 750px) {
+    .transform_pc { display: none !important; }
+    .transform_sm { display: block !important; }
+
+    .pc { display: none !important; }
+    .sp { display: block !important; }
 }
 
 /* nav {
