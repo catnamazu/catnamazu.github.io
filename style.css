@@ -41,6 +41,24 @@ body {
     margin-bottom: 200px;
 }
 
+.bar-counter{
+    position: absolute;
+    top: 200px;
+}
+
+.counter-pc{
+    display: block !important;
+    background-color: black;
+    max-width: fit-content;
+}
+
+.counter-sm{
+    display: none !important;
+    background-color: black;
+    max-width: fit-content;
+    font-size: 20px;
+}
+
 .contents{
     text-align: center;
     border: none;
@@ -147,6 +165,9 @@ body {
 @media only screen and (max-width: 750px) {
     .transform_pc { display: none !important; }
     .transform_sm { display: block !important; }
+
+    .counter-pc { display: none !important; }
+    .counter-sm { display: block !important; }
 
     .pc { display: none !important; }
     .sp { display: block !important; }
