@@ -3,15 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="../style.css">
-        <title>の、ブラックブロックチョコ</title>
+        <title>ここにタイトルを入力</title>
     </head>
     <body>
         <div class="contents">
             <span class="subtitle">ここにタイトルを入力</span>
                 <div class="text">
+                    <p>こんにちは、ザクザク食感です。</p>
                     <p>
                         ここに本文を入力
                     </p>
+                    <p>それでは、さようなら。</p>
                     <a href="https://www.free-counter.jp/"><img src="https://www.f-counter.net/j/61/1679227695/" alt="アクセスカウンター"></a>
                     <br><br>
                 </div>
