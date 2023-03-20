@@ -112,6 +112,8 @@ table{
     right: 0;
     margin: auto;
     margin-bottom: 20px;
+    top: 1vh;
+    transform: translateY(-50%);
 }
 
 .link{
