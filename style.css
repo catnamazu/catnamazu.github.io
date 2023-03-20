@@ -105,6 +105,15 @@ a:hover{
     background-color: black;/*線の色*/
 }
 
+table{
+    width: 50%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
 .link{
     border: 1px solid black;
     display: inline-block;
