@@ -83,6 +83,12 @@ a:hover{
     margin-right: 5%;
 }
 
+.subtext{
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 .subtitle{
     position: relative;
     display: inline-block;
