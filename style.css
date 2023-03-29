@@ -142,7 +142,7 @@ table{
     padding: 8px;
     margin: 10px;
     width: 30%;
-    margin-top: 1em;
+    /* margin-top: 1em; */
     margin-bottom: 1em;
     font-weight: bold;
 }
