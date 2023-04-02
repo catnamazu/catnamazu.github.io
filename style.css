@@ -113,13 +113,14 @@ a:hover{
 
 table{
     width: 50%;
+    height: auto;
     position: relative;
     left: 0;
     right: 0;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     top: 1vh;
-    transform: translateY(-50%);
+    /* transform: translateY(-50%); */
 }
 
 .link{
