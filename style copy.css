@@ -23,6 +23,7 @@ a:hover{
 }
 
 .transform{
+    display: block;
     position: relative;
         left: 10px;
     font-family: serif;
@@ -33,7 +34,7 @@ a:hover{
     transform: scale(0.6, 1);
     transform-origin: left top;
     width: 167%;
-    margin-bottom: 500px;
+    margin-bottom: 200px;
 }
 
 .transform_pc{
@@ -68,6 +69,12 @@ a:hover{
 .bar-counter{
     position: absolute;
     top: 200px;
+}
+
+.counter{
+    display: block;
+    background-color: black;
+    max-width: fit-content;
 }
 
 .counter-pc{
@@ -126,7 +133,7 @@ a:hover{
 }
 
 table{
-    width: 50%;
+    width: 80%;
     height: auto;
     position: relative;
     left: 0;
@@ -134,7 +141,7 @@ table{
     margin: auto;
     margin-bottom: 50px;
     top: 1vh;
-    transform: translateY(-50%);
+    /* transform: translateY(-50%); */
 }
 
 .link{
@@ -156,7 +163,7 @@ table{
     text-align: center;
     padding: 8px;
     margin: 10px;
-    width: 30%;
+    width: 40%;
     /* margin-top: 1em; */
     margin-bottom: 1em;
     font-weight: bold;
