@@ -134,7 +134,7 @@ table{
     margin: auto;
     margin-bottom: 50px;
     top: 1vh;
-    transform: translateY(-50%);
+    /* transform: translateY(-50%); */
 }
 
 .link{
