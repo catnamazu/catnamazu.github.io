@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../style.css">
+        <title>1分でいいから待って</title>
+    </head>
+    <body>
+        <div class="contents">
+            <span class="subtitle">1分でいいから待って</span>
+                <div class="text" id="text">
+                    <p>こんにちは、ザクザク食感です。</p>
+                    <p>
+                        今日が終わっちゃう……
+                    </p>
+                    <p>
+                        今日ヌルっと消えよ～と思ってたけど普通に無理だった
+                    </p>
+                    <p>
+                        頑張って生きよう！とも思うし、こんなのに意味ないな！とも思うし、眠れたり眠れなかったり、楽しかったり苦しかったり、ずっとそんな感じです<br>
+                        でもたぶん人生ってこんなもんだわ
+                    </p>
+                    <p>
+                        本当に残念だけど僕らは生きるしかないってwotakuも言ってた 明日からも頑張りましょうね～！
+                    </p>
+                    <p>それでは、さようなら。</p>
+                    <br>
+                    <a href="https://www.free-counter.jp/"><img src="https://www.f-counter.net/j/61/1679227695/" alt="アクセスカウンター"></a>
+                    <br>
+                </div>
+        </div>
+        <div class="info">
+            <a href="https://catnamazu.github.io/2023bloglist.html"><span class="infotxt">リストに戻る</span></a>
+            <a href="https://catnamazu.github.io/index.html"><span class="infotxt">トップページ</span></a>
+        </div>
+
+        <script>
+
+        // ページの読み込み完了時に実行
+        document.addEventListener('DOMContentLoaded', function() {
+          // テキスト要素を取得
+          var textElement = document.getElementById('text');
+          // テキストの内容を取得
+          var text = textElement.innerHTML;
+          // テキストの文字数を取得
+          var textLength = text.length;
+    
+          // 文字が一文字ずつ消えるアニメーションの実行
+          var interval = 100; // 1文字あたりの表示時間（ミリ秒）
+          for (var i = 0; i < textLength; i++) {
+            (function(index) {
+              setTimeout(function() {
+                var slicedText = text.slice(0, textLength - index);
+                textElement.innerHTML = slicedText;
+              }, interval * index);
+            })(i);
+          }
+        });
+
+
+        // 5秒後に別のページに遷移する
+        setTimeout(function() {
+        window.location.href = "https://catnamazu.github.io/2023list/2023_5_30_2.html";
+        }, 60000); // 5000ミリ秒（5秒）後に遷移
+        </script>
+    </body>
+</html>
