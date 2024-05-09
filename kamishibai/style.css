@@ -1,0 +1,7 @@
+/* キャンバスを重ねて表示するためのスタイル */
+#background-layer,
+#character-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
