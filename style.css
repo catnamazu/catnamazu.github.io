@@ -272,6 +272,9 @@ blockquote cite {
     color: #888888;
     font-size: 0.9em;
 }
+.twitter-tweet {
+    width: 100% !important;
+}
 
 /* nav {
     width: 100%;
