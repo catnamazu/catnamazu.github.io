@@ -183,6 +183,12 @@ table{
     font-weight: bold;
 }
 
+.giga{
+    font-size:300px;
+    font-weight: bolder;
+    line-height: 0.9;
+}
+
 @media only screen and (max-width: 750px) {
     .jump{
         border: 1px solid black;
